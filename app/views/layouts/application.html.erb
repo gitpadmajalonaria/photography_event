@@ -12,6 +12,11 @@
   <body>
      <div text-align="center">
       <a class="nav-link active" aria-current="page" href="#"> <%= yield %></a>
-     </div>     
+     </div>
+    <%= render 'layouts/header' %>
+
+    <%= yield %>
+
+    <%= render 'layouts/footer' %>
   </body>
 </html>
