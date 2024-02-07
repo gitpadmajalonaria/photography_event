@@ -1,1 +1,22 @@
-hello there !!!
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+  <head>
+    <title>Home page</title>
+    <h3>Welcome to Photography Event!!!</h3>
+  </head>
+
+  <body>
+  	<nav class="w3-bar w3-black">
+		  <a href="#home" class="w3-button w3-bar-item">Home</a>
+		  <a href="#band" class="w3-button w3-bar-item">Band</a>
+		  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+		  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+		</nav>
+  </body>
+
+  <%= button_to "logout", destroy_customer_session_path, method: :delete  %>
+
+</html>

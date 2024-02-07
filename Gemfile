@@ -27,6 +27,10 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 gem 'devise'
+gem 'pg'
+gem 'dotenv'
+
+gem 'hotwire-rails'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
