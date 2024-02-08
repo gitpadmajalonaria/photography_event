@@ -1,0 +1,8 @@
+:checks_remove: []
+:checks_add:
+- :rubocop
+- :debugger
+- :whitespace
+:warnings_remove: []
+:warnings_add:
+- :json

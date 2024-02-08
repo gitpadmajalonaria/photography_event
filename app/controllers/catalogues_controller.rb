@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# catalogues controller for rendering images/videos
 class CataloguesController < ApplicationController
   def index
     @catalogues = Catalogue.all
@@ -6,6 +9,5 @@ class CataloguesController < ApplicationController
   def new
   end
 
-  def destroy
-  end
+  def destroy; end
 end
