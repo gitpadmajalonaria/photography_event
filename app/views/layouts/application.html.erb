@@ -9,14 +9,12 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
-  <body>
-     <div text-align="center">
-      <a class="nav-link active" aria-current="page" href="#"> <%= yield %></a>
-     </div>
+  <body> 
     <%= render 'layouts/header' %>
 
-    <%= yield %>
-
+    <div text-align="center">
+      <a class="nav-link active" aria-current="page" href="#"> <%= yield %></a>
+     </div>
     <%= render 'layouts/footer' %>
   </body>
 </html>
