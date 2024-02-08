@@ -28,8 +28,6 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 gem 'devise'
-gem 'pg'
-gem 'dotenv'
 gem 'hotwire-rails'
 gem 'cssbundling-rails'
 
