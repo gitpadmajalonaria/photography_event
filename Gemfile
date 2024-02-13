@@ -31,7 +31,7 @@ gem 'devise'
 gem 'hotwire-rails'
 gem 'cssbundling-rails'
 gem 'rubocop-rails', require: false
-
+# gem 'sass-rails'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 

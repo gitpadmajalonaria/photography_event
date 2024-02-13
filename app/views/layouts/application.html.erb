@@ -6,14 +6,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application" %>
   </head>
-    <%= render 'layouts/header' %>
   <body>
-     <div text-align="center">
-      <a class="nav-link active" aria-current="page" href="#"> <%= yield %></a>
-     </div>
-
-  </body>
+    <%= render 'layouts/header' %>
+      <%= yield %>
     <%= render 'layouts/footer' %>
+  </body>
 </html>

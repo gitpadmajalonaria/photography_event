@@ -1,26 +1,36 @@
-<div class="container-fluid h-100">
-  <div class="row h-100">
-    <div class="col-5 col-md-3 collapse width m-0 p-0 h-100 bg-dark" id="collapseExample">
-       ..
-    </div>
-    <div class="col">
-      <div class="row">
-        <div class="col-12">
-          <button class="btn sticky-top" data-toggle="collapse" href="#collapseExample" role="button">
-            <div class="top-links">
-            <!-- Your header content here, e.g., logo and navigation menu -->
-               <% if customer_signed_in? %>
-                <%= button_to "logout", destroy_customer_session_path, method: :delete, class: "nav-link" %>
-               <% else %>
-                <%= link_to "Sign Up", new_customer_registration_path, class: "nav-link" %>
-                <%= link_to "Login", new_customer_session_path, class: "nav-link" %>
-               <% end %>
-            </div>
-          </button>
-        </div>
-        <div class="col-12">
-        </div>
-      </div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Photography Events</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarNav">
+      <ul class="navbar-nav">
+        <% if customer_signed_in? %>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/customers", method: :delete>logout</a>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Sign Up", new_customer_registration_path, class: "nav-link active" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Login", new_customer_session_path, class: "nav-link active" %>
+          </li>
+        <% end %>
+        <li class="nav-item">
+          <%= link_to "Home", "/homes", class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+</nav>
