@@ -2,6 +2,12 @@
   background-image: url('photography.jpg');
   background-size: cover;
   padding-bottom: 57.5%;
+  animation-name: home_image;
+  animation-duration: 1s;
+}
+
+@keyframes home_image {
+  100% {background-image: url('white.jpg'); }
 }
 
 .hero {
@@ -37,9 +43,9 @@
 }
 
 .section-logos {
-  width: 100vw;
+  width: 25vw;
   height: auto;
-  max-width: 100%;
+  max-width: 25%;
   background-color: var(--d-s-white);
   margin-top: 0;
   position: relative;
@@ -56,5 +62,32 @@
   font-style: italic;
   font-weight: 200;
   line-height: 1.4em;
+}
+
+.logos-wrapper{
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.brand-names{
+  display: inline-block;
+  overflow: hidden;
+  height: 10%;
+  width: 10%;
+  padding: 25px;
+  margin: 15px;
+}
+
+img{
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+
+}
+
+.small-heading-wrapper{
+  overflow: hidden;
+  font-family: Ppeditorialnew, sans-serif;
 }
 
