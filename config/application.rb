@@ -24,5 +24,6 @@ module PhotographyEvent
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     Dotenv.load
+    config.i18n.default_locale = :en
   end
 end
