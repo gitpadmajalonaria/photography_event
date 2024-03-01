@@ -29,3 +29,21 @@
 
 en:
   hello: "Hello world"
+  home_page:
+    n1: "Perfect"
+    n2: "Pictures"
+    home_top:
+      title: "Classic Captures"
+      h6: "ALLOWING YOUR UNIQUE MOMENTS TO AGE GRACEFULLY"
+  section_logos:
+    h2: "They talk about us"
+  activerecords:
+    errors:
+      messages:
+        record_invalid: "Validation failed: %{errors}"
+        taken: "Already been taken"
+        blank: "can't be blank"
+        empty: "can't be empty"
+        invalid: "is invalid value"
+
+

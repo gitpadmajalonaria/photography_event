@@ -10,28 +10,16 @@
     <%= stylesheet_link_tag "home" %>
     <div class="jumbotron home-top">
       <div class="hero">
-        <p>Perfect <br />Pictures</p>
-        <p>Classic Captures</p>
-        <h6>ALLOWING YOUR UNIQUE MOMENTS TO AGE GRACEFULLY</h6>
+        <p><%= I18n.t("home_page.n1")%><br /><%= I18n.t("home_page.n2")%></p>
+        <p><%= I18n.t("home_page.home_top.title")%></p>
+        <h6><%= I18n.t("home_page.home_top.h6")%></h6>
       </div>
     </div>
-
-
-
-   <%#  <div class="jumbotron home-second">
-      <div class="about">
-          <h6>What are we.</h6>
-          <p>A thing that you see in my pictures is that I was not afraid to fall in love with these people.</p>
-      </div>
-      <div class="contact">
-      </div>
-    </div> %>
-
 
     <div class="logos-container">
       <div data-w-id="4dca7924-df5b-ffba-c165-7c96a7b329c7" class="section-logos">
         <div class="small-heading-wrapper">
-          <h2 class="heading-2">They talk about us</h2>
+          <h2 class="heading-2"><%= I18n.t("section_logos.h2")%></h2>
          </div>
         </div>
       </div>
